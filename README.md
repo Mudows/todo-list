@@ -15,7 +15,9 @@ Techs Used:
 Description:
   A simple list to track your daily tasks. End procrastination now!
 
-Project Status: DEPLOYED
+Project Status: **DEPLOYED**
+
+Queued Updates: **NONE**
 
 Planned Updates:
   - Tasklist style for clear reading and manipulation;
