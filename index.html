@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/5bcf78eb73.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Arquivo CSS padrão do site -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./css/style.css?ts=<?= time() ?"
+    />
+  </head>
+  <body>
+    <main class="container-fluid">
+      <section class="row">
+        <section id="control-panel" class="col-md-3">
+          <header class="">
+            <h1 class="text-center">Lista de Tarefas</h1>
+            <p id="how-to" class="">
+              Clique duas vezes em um item para marcá-lo como completo
+            </p>
+          </header>
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"
+              ><i class="fa-solid fa-pencil"></i
+            ></span>
+            <input
+              id="texto-tarefa"
+              class="form-control"
+              type="text"
+              placeholder="Digite a tarefa aqui."
+              aria-describedby="addon-wrapping"
+            />
+          </div>
+          <div id="panel-btns" class="text-center d-grid gap-md-1">
+            <button type="button" id="criar-tarefa" class="btn btn-sm">
+              Criar Tarefa
+            </button>
+            <button id="salvar-tarefas" class="btn btn-sm">Salvar Lista</button>
+            <button id="remover-finalizados" class="btn btn-sm">
+              Limpar Finalizados
+            </button>
+            <button id="remover-selecionado" class="btn btn-sm">
+              Remover Selecionado
+            </button>
+            <button id="apaga-tudo" class="btn btn-sm">Limpar Lista</button>
+            <div>
+              <button id="mover-cima" class="btn btn-dark btn-sm">∧</button>
+              <button id="mover-baixo" class="btn btn-dark btn-sm">∨</button>
+            </div>
+          </div>
+          <br />
+          <br />
+          <p id="disclaimer">
+            To-Do List v1.5 | Desenvolvido por <a href="https://mudows.github.io/" target="_blank">Diego M. Cezar</a> em Mar/2022 com base no
+            projeto de avaliação do Bloco 5 realizado na
+            <a href="https://www.betrybe.com/" target="_blank">Trybe</a>,
+            utilizando Bootstrap, jQuery e Sass.
+          </p>
+        </section>
+        <section id="task-list" class="col-md-9">
+          <ol id="lista-tarefas"></ol>
+        </section>
+      </section>
+    </main>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
