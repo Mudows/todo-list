@@ -1,4 +1,9 @@
-[Access the live version, now!](https://mudows.github.io/trybe-projects-showcase/todo-list/)
+> ---
+> 
+> [CHECK OUT THE LIVE VERSION!](https://mudows.github.io/trybe-projects-showcase/todo-list/)  
+>
+> ---
+
 ```
 # Mudow's To Do List
 
