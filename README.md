@@ -1,6 +1,6 @@
 > ---
 > 
-> [CHECK OUT THE LIVE VERSION!](https://mudows.github.io/trybe-projects-showcase/todo-list/)  
+> [CHECK OUT THE LIVE VERSION!](https://todo-list-lemon-theta.vercel.app/)  
 >
 > ---
 
